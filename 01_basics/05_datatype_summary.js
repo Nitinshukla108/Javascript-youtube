@@ -32,3 +32,34 @@ let myFunction = function(){
     console.log("hello dude");
     
 } // function - its typeof is the obejct-function
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// memory - stack and heap memory 
+// stack - primitive and heap - non-primitive(reference)
+
+//stack 
+
+let myName = "nitin";
+let otherName = myName;
+otherName = "golu";
+
+console.log(myName);
+console.log(otherName);
+// as you guys can see that hamari value change nahi ho rhi first wale 'myName' me because ye copy leta haii other ki 
+
+
+// heap 
+
+let userOne = {
+    email:"nit@gmail.com",
+    age:12,
+}
+
+let userTwo = userOne;
+userTwo.email = "nitin@gmail.com";
+
+console.log(userOne);
+console.log(userTwo);
+// as you guys can see that here our value is chagnges into first object also beacuse here its passes the reference of the value thats why.

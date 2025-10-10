@@ -79,3 +79,36 @@ console.log(Object.entries(tinder));
 
 console.log(tinder.hasOwnProperty('gender'));
 console.log(tinder.hasOwnProperty('isLogged'));
+
+
+
+
+
+// de-structuring 
+
+const youtube = {
+    userName:"nitn",
+    userCourse:"js in hindi",
+    UserTime:5
+}
+
+const {userCourse} = youtube;
+console.log(userCourse);
+//console.log(userName); --  // idhar we can see error bcoz humne userName ka di-structure nahi kia hai
+
+// if hume kisi ka name short krna hoto
+
+const {userName:Name} = youtube
+console.log(Name);
+
+
+
+// json
+
+{
+    "name":"nitin",
+    "surname":"shukla"
+    "father":"ravi"
+}
+
+// ye json ka syntax hai 
